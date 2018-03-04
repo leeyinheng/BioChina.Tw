@@ -27,6 +27,9 @@
 	color: black
 }
 
+.fb-comments, .fb-comments span, .fb-comments.fb_iframe_widget span iframe {
+    width: 100% !important;
+}
 /* Style the Image Used to Trigger the Modal */
 .hoverImg {
     border-radius: 5px;
