@@ -12,8 +12,28 @@
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<script>
+				window.fbAsyncInit = function() {
+				  FB.init({
+					appId            : '773104939484696',
+					autoLogAppEvents : true,
+					xfbml            : true,
+					version          : 'v2.12'
+				  });
+				};
+				(function(d, s, id){
+				   var js, fjs = d.getElementsByTagName(s)[0];
+				   if (d.getElementById(id)) {return;}
+				   js = d.createElement(s); js.id = id;
+				   js.src = "https://connect.facebook.net/zh_TW/sdk.js";
+				   fjs.parentNode.insertBefore(js, fjs);
+				 }(document, 'script', 'facebook-jssdk'));
+		</script>
 	</head>
-	<body class="homepage">
+	
+	<body class="homepage">	
+
+		
 		<div id="page-wrapper">
 
 			<!-- Header -->
@@ -150,6 +170,8 @@
 					</div>
 				</div>
 
+				
+
 			<!-- Footer -->
 				<div id="footer-wrapper">
 					<footer id="footer" class="container">
@@ -203,9 +225,26 @@
 				</div>
 
 			</div>
+			
 
-		<!-- Scripts -->
+		 
+					<div class="fb-customerchat"
+					page_id="925974014129825"
+					logged_in_greeting="您好 有甚麼可為您服務? "
+					logged_out_greeting="您好 有甚麼可為您服務? "
+				  >
 
+				 
+				  </div>
+		 
+				 
+
+	
+	
+	
+			<!-- Scripts -->
+
+			
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.dropotron.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>
