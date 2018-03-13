@@ -9,6 +9,14 @@
 
 
 /* added by Henry 2018/2 */ 
+
+.iconImage 
+{
+	width: 25%;
+    height: auto;
+}
+
+
 .tooltip {
 	position: relative;
 	display: inline-block;
@@ -74,11 +82,7 @@
 }
 
 
-.iconImage 
-{
-	width: 25%;
-    height: auto;
-}
+
 
 .roundcorner { 
     border-radius: 25px;   
