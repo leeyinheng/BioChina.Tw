@@ -9,6 +9,76 @@
 
 
 /* added by Henry 2018/2 */ 
+.tooltip {
+	position: relative;
+	display: inline-block;
+	border-bottom: 1px dotted black;
+	
+}
+
+.tooltip .tooltiptext {
+	visibility: hidden;
+	width: 140px;
+	background-color: rgb(253, 252, 252);
+	color: rgba(14, 180, 42, 0.712);
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px 0;
+
+	/* Position the tooltip */
+	position: absolute;
+	z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+	visibility: visible;
+}
+
+
+.containerbox {
+	position: relative;
+	text-align: center;
+	color: green;
+	font-weight: bold;
+}
+
+.bottom-left {
+	position: absolute;
+	bottom: 8px;
+	left: 16px;
+}
+
+.top-left {
+	position: absolute;
+	top: 8px;
+	left: 16px;
+}
+
+.top-right {
+	position: absolute;
+	top: 8px;
+	right: 16px;
+}
+
+.bottom-right {
+	position: absolute;
+	bottom: 8px;
+	right: 16px;
+}
+
+.centered {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+
+.iconImage 
+{
+	width: 25%;
+    height: auto;
+}
 
 .roundcorner { 
     border-radius: 25px;   
