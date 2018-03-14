@@ -10,6 +10,12 @@
 
 /* added by Henry 2018/2 */ 
 
+.displayImage 
+{
+	width: 80%;
+    height: auto;
+}
+
 .iconImage 
 {
 	width: 25%;
