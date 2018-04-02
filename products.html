@@ -323,6 +323,7 @@
 															不同於他牌甲殼素, 水溶性蟹殼素能被人體吸收87%,且能隨著血液循環到身體各器官發揮作用
 														</strong>
 													</p>
+													<!--
 													<p> 
 															<a
 															href="https://www.rakuten.com.tw/shop/biochina/product/ihne88mm3/?l-id=tw_search_grid_product_thumbnail_3"
@@ -331,6 +332,12 @@
 															了解更多
 															</a>
 													</p>
+													-->
+													<p>
+															洽詢專線:
+	
+															<a href="tel: 0800608899">0800-608-899</a>
+													</p> 
 												</div>
 											</section>
 										</div>
@@ -580,10 +587,11 @@
 															alt=""
 														>
 													</a>
-
+													 
 													<span class="tooltiptext">
 														<strong style="color:green">~到樂天購物車~</strong>
 													</span>
+												 
 												</div>
 
 												<div class="inner">
@@ -647,10 +655,11 @@
 															alt=""
 														>
 													</a>
-
+													<!--
 													<span class="tooltiptext">
 														<strong style="color:green">~到樂天購物車~</strong>
 													</span>
+													--> 
 												</div>
 
 												<div class="inner">
@@ -674,6 +683,7 @@
 														所帶之強烈正電荷能干擾病原菌、細菌等細胞表面所帶的負電荷，增加細胞膜、細胞壁的通透性。利用此特性應用在口腔或身體清潔方面，能有效且安全的達到抑菌的效果
 													 降低牙周病機率 並且有良好的水溶性及高保濕性，能在刷牙及漱口的過程中，均勻的塗佈在口腔、牙齒表面，形成一層抑菌保護膜
 													</p>
+													<!--
 													<p> 
 															<a
 															href="https://www.rakuten.com.tw/shop/biochina/product/rey2sfl33/"
@@ -682,6 +692,12 @@
 															了解更多
 															</a>
 													</p>
+													-->
+													<p>
+															洽詢專線:
+	
+															<a href="tel: 0800608899">0800-608-899</a>
+													</p> 
 		 
 												</div>
 											</section>
@@ -1103,7 +1119,7 @@
 
 	<!-- Chitosan Pop Modal Slides -->
 	<div id="chitosanModal" class="modal">
-		<span class="close cursor" onclick="closeModal()">&times;</span>
+		<span class="close cursor" onclick="closeModal()" on-touch="closeModal()">&times;</span>
 		<div class="modal-content">
 	  
 		  <div class="mySlides">
@@ -1205,6 +1221,11 @@
 	<script src="assets/js/util.js"></script>
 	<!-- [if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif] -->
 	<script src="assets/js/main.js"></script>
+	<script src="assets/js/jquery.excoloSlider.min.js"></script>
+	<link
+		href="assets/css/jquery.excoloSlider.css"
+		rel="stylesheet"
+	></link>
 
 	<script>
 		function openModal() {
@@ -1244,5 +1265,14 @@
 		  captionText.innerHTML = dots[slideIndex-1].alt;
 		}
 		</script>
+
+		<script>
+		$(function () {
+        	$("#slider").excoloSlider({
+    			interval: 8000, // = 5 seconds
+    			playReverse: false
+			});
+		});
+	</script>
 </body>
 </html>
