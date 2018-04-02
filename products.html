@@ -268,21 +268,27 @@
 
 											<section class="box feature">
 												<div class="tooltip">
+													<!-- 
 													<a
 														name="p1"
 														href="https://www.rakuten.com.tw/shop/biochina/product/ihne88mm3/?l-id=tw_search_grid_product_thumbnail_3"
 														target="_blank"
 														class="image featured hoverImg"
-													>
-														<img
-															src="images/slide2.jpg"
-															alt=""
-														>
+													>--> 
+														
 													</a>
 
+													<img
+															src="images/slide2.jpg"
+															alt=""
+															onclick="openModal();currentSlide(1)"
+															class="image featured hover-shadow cursor"
+													>
+													<!--
 													<span class="tooltiptext">
 														<strong style="color:green">~到樂天購物車~</strong>
 													</span>
+													--> 
 												</div>
 
 												<div class="inner">
@@ -1095,6 +1101,94 @@
 		</div>
 	</div>
 
+	<!-- Chitosan Pop Modal Slides -->
+	<div id="chitosanModal" class="modal">
+		<span class="close cursor" onclick="closeModal()">&times;</span>
+		<div class="modal-content">
+	  
+		  <div class="mySlides">
+			<div class="numbertext">1 / 9</div>
+			<img src="./images/c1.jpg" style="width:100%">
+		  </div>
+	  
+		  <div class="mySlides">
+			<div class="numbertext">2 / 9</div>
+			<img src="./images/c2.jpg" style="width:100%">
+		  </div>
+	  
+		  <div class="mySlides">
+			<div class="numbertext">3 / 9</div>
+			<img src="./images/c3.jpg" style="width:100%">
+		  </div>
+		  
+		  <div class="mySlides">
+			<div class="numbertext">4 / 9</div>
+			<img src="./images/c4.jpg" style="width:100%">
+		  </div>
+		  
+		  <div class="mySlides">
+				<div class="numbertext">5 / 9</div>
+				<img src="./images/c5.jpg" style="width:100%">
+			  </div>
+		  
+			  <div class="mySlides">
+				<div class="numbertext">6 / 9</div>
+				<img src="./images/c6.jpg" style="width:100%">
+			  </div>
+		  
+			  <div class="mySlides">
+				<div class="numbertext">7 / 9</div>
+				<img src="./images/c7.jpg" style="width:100%">
+			  </div>
+			  
+			  <div class="mySlides">
+				<div class="numbertext">8 / 9</div>
+				<img src="./images/c8.jpg" style="width:100%">
+			  </div>
+			<div class="mySlides">
+					<div class="numbertext">9 / 9</div>
+					<img src="./images/c9.jpg" style="width:100%">
+			 </div>
+			  
+		  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+	  
+		  <div class="caption-container">
+			<p id="caption"></p>
+		  </div>
+	  
+	  
+		  <div class="column">
+			<img class="demo cursor" src="./images/c1.jpg" style="width:100%" onclick="currentSlide(1)" alt="大自然賜予的神奇物質">
+		  </div>
+		  <div class="column">
+			<img class="demo cursor" src="./images/c2.jpg" style="width:100%" onclick="currentSlide(2)" alt="認識高分子水溶性幾丁聚醣">
+		  </div>
+		  <div class="column">
+			<img class="demo cursor" src="./images/c3.jpg" style="width:100%" onclick="currentSlide(3)" alt="驚人的保健效果">
+		  </div>
+		  <div class="column">
+			<img class="demo cursor" src="./images/c4.jpg" style="width:100%" onclick="currentSlide(4)" alt="如何選購">
+		  </div>
+		  <div class="column">
+				<img class="demo cursor" src="./images/c5.jpg" style="width:100%" onclick="currentSlide(5)" alt="HFP 四大理由">
+			  </div>
+			  <div class="column">
+				<img class="demo cursor" src="./images/c6.jpg" style="width:100%" onclick="currentSlide(6)" alt="最新技術">
+			  </div>
+			  <div class="column">
+				<img class="demo cursor" src="./images/c7.jpg" style="width:100%" onclick="currentSlide(7)" alt="天然安全 絕不傷身">
+			  </div>
+		 <div class="column">
+			<img class="demo cursor" src="./images/c8.jpg" style="width:100%" onclick="currentSlide(8)" alt="技術專利 水溶性易吸收">
+		 </div>
+		 <div class="column">
+			<img class="demo cursor" src="./images/c9.jpg" style="width:100%" onclick="currentSlide(9)" alt="FDA 認證 檢驗報告">
+		</div>
+		</div>
+	  </div> 
+
+
 	<!-- FB Chat Plug In -->
 
 	<div
@@ -1111,5 +1205,44 @@
 	<script src="assets/js/util.js"></script>
 	<!-- [if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif] -->
 	<script src="assets/js/main.js"></script>
+
+	<script>
+		function openModal() {
+		  document.getElementById('chitosanModal').style.display = "block";
+		}
+		
+		function closeModal() {
+		  document.getElementById('chitosanModal').style.display = "none";
+		}
+		
+		var slideIndex = 1;
+		showSlides(slideIndex);
+		
+		function plusSlides(n) {
+		  showSlides(slideIndex += n);
+		}
+		
+		function currentSlide(n) {
+		  showSlides(slideIndex = n);
+		}
+		
+		function showSlides(n) {
+		  var i;
+		  var slides = document.getElementsByClassName("mySlides");
+		  var dots = document.getElementsByClassName("demo");
+		  var captionText = document.getElementById("caption");
+		  if (n > slides.length) {slideIndex = 1}
+		  if (n < 1) {slideIndex = slides.length}
+		  for (i = 0; i < slides.length; i++) {
+			  slides[i].style.display = "none";
+		  }
+		  for (i = 0; i < dots.length; i++) {
+			  dots[i].className = dots[i].className.replace(" active", "");
+		  }
+		  slides[slideIndex-1].style.display = "block";
+		  dots[slideIndex-1].className += " active";
+		  captionText.innerHTML = dots[slideIndex-1].alt;
+		}
+		</script>
 </body>
 </html>
