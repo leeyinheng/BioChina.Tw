@@ -491,20 +491,17 @@
 
 											<section class="box feature">
 												<div class="tooltip">
-													<a
-														name="p7"
-														href="https://www.rakuten.com.tw/shop/biochina/product/pyzuhzrvy/?l-id=tw_shopproducts_product_9"
-														target="_blank"
-														class="image featured hoverImg"
-													>
+													 
 														<img
-															src="images/peralgreen_p.jpg"
+															src="images/p1.jpg"
 															alt=""
+															onclick="openPeralModal();"
+															class="image featured hover-shadow cursor"
 														>
-													</a>
+												 
 
 													<span class="tooltiptext">
-														<strong style="color:green">~到樂天購物車~</strong>
+														<strong style="color:pink">~點開看更多~</strong>
 													</span>
 												</div>
 
@@ -1117,6 +1114,27 @@
 		</div>
 	</div>
 
+
+		<!-- Peral Pop Modal -->
+		<div id="peralModal" class="modal">
+				<span class="close cursor" onclick="closePeralModal()" on-touch="closePeralModal()">&times;</span>
+				<div class="modal-content">
+
+				
+						<img src="./images/peral_full.jpg" style="width:100%">
+				
+
+						<div class="caption-container">
+							<p id="caption"></p>
+						</div>
+				
+				</div>
+
+
+		</div>
+
+	 
+
 	<!-- Chitosan Pop Modal Slides -->
 	<div id="chitosanModal" class="modal">
 		<span class="close cursor" onclick="closeModal()" on-touch="closeModal()">&times;</span>
@@ -1202,7 +1220,8 @@
 			<img class="demo cursor" src="./images/c9.jpg" style="width:100%" onclick="currentSlide(9)" alt="FDA 認證 檢驗報告">
 		</div>
 		</div>
-	  </div> 
+	</div> 
+
 
 
 	<!-- FB Chat Plug In -->
@@ -1234,6 +1253,14 @@
 		
 		function closeModal() {
 		  document.getElementById('chitosanModal').style.display = "none";
+		}
+
+		function openPeralModal() {
+		  document.getElementById('peralModal').style.display = "block";
+		}
+		
+		function closePeralModal() {
+		  document.getElementById('peralModal').style.display = "none";
 		}
 		
 		var slideIndex = 1;
