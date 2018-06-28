@@ -8,6 +8,7 @@
 */
 /* added by Henry Lee 2018/4 for features */ 
 /* The Modal (background) */
+
 .row > .column {
 	padding: 0 8px;
   }
@@ -99,6 +100,8 @@
   .next:hover {
 	background-color: rgba(0, 0, 0, 0.8);
   }
+
+  
   
   /* Number text (1/3 etc) */
   .numbertext {

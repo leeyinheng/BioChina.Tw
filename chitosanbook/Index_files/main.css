@@ -51,3 +51,12 @@ footer{background:#fff;color:#2f2f2f;font-size:12px;padding:50px 0 30px;position
 footer .info{text-align:center;margin-bottom:20px;}
 footer .info a{color:#2f2f2f;}
 #mobile-menu{display:none;}
+
+
+/* banner change effect */ 
+.bannerchange { 
+	content: url(../images/subbanner_a.jpg)  
+   }
+  .bannerchange:hover {
+    content: url(../images/subbanner.jpg); 
+  }
