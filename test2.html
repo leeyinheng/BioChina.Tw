@@ -1,0 +1,168 @@
+<!DOCTYPE html> 
+
+<!--this is a HTML code practice from David Chen -->
+
+<html  lang="zh-Hant-TW">
+
+   
+
+<head>
+    <!-- SEO -->
+    <title>夢幻米克斯貓│你的生活好夥伴</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="content-language" content="zh-tw" />
+    <meta name="author" content="David Chen">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes"/>
+    <meta name="description" content="米克斯貓咪,或稱作短毛家貓,是經過各地不同品種雜交後的結果,也因此牠們擁有多變的花色 體態 與性格。但不變的是,只要跟牠們培養好感情,牠們會是你生活上的好夥伴,給你帶來許多樂趣與驚喜(或是驚嚇 XD)。接下來我們就來好好介紹一下米克斯貓咪們,也希望看完介紹的你能去各地收容所或愛心中途認養一隻米克斯回家好好供奉,為流浪動物盡一點小小的努力。">
+    <meta name="keywords" content="米克斯貓,七種,花色,認養,mixed breed cats,TNR,TNVR,貓咪,貓,健康,聰明,街頭動物,流浪動物,保護">
+   
+    <meta property="og:title" content="夢幻米克斯貓│你的生活好夥伴"/>
+    <meta property="og:url" content="TBD"/>
+    <meta property="og:image" content="TBD"/>
+    <meta property="og:description" content="米克斯貓咪,或稱作短毛家貓,是經過各地不同品種雜交後的結果,也因此牠們擁有多變的花色 體態 與性格。但不變的是,只要跟牠們培養好感情,牠們會是你生活上的好夥伴,給你帶來許多樂趣與驚喜(或是驚嚇 XD)。接下來我們就來好好介紹一下米克斯貓咪們,也希望看完介紹的你能去各地收容所或愛心中途認養一隻米克斯回家好好供奉,為流浪動物盡一點小小的努力。"/>
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <!-- BOOTSTRAP 4.0 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <style>
+        body {
+          font-size: 28px;
+          margin-top: 8px;
+          margin-right: 8px;
+          margin-left: 8px;
+          margin-bottom: 8px;
+        }
+        p{
+          text-indent : 1em;
+          margin-block-start: 28px;
+          margin-block-end: 28px;
+          line-height:1.33;
+          
+        }
+        .active {
+          background-color: #8C6239;
+          line-height:37px
+        }
+
+     
+
+
+        ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          /* overflow: hidden; */
+          background-color: rgb(224, 174, 118);
+          position: -webkit-sticky; /* Safari */
+          position: sticky;
+          top: 0;  
+          min-height: 65px;
+        }
+        
+        li {
+          float: left;
+          border-right:1px solid #fff;
+          line-height:37px
+        }
+        li:last-child {
+          border-right: none;
+        }
+        
+        li a, .dropbtn {
+          display: inline-block;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+
+        li a:hover, .dropdown:hover .dropbtn {
+          background-color: rgb(134, 66, 10);
+          text-decoration: none;
+          color: white;
+        }
+
+        li.dropdown {
+          display: inline-block;
+        }
+
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: rgb(224, 174, 118);
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+        }
+
+        .dropdown-content a {
+          color: white;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+          text-align: left;
+        }
+
+        .dropdown-content a:hover {background-color: #8C6239;}
+
+        .dropdown:hover .dropdown-content {
+          display: block;
+        }
+      
+    </style>
+
+
+</head> 
+<body>
+      
+      <ul>
+        <li><a class="active" href="index.html">首頁</a></li>
+        <li><a href="colors.html">常見花色介紹</a></li>
+        <li class="dropdown">
+            <a href="community.html" class="dropbtn">社區街貓故事</a>
+              <div class="dropdown-content">
+                <a href="#">Mika</a>
+                <a href="#">小白</a>
+                <a href="#">小斑(派咪)</a>
+                <a href="#">小橘</a>
+                <a href="#">大頭白白</a>
+                <a href="#">小小橘(勇)</a>
+                <a href="#">Mia(淑女)</a>
+                <a href="#">小百合</a>
+              </div>
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">貓奴生活分享</a>
+              <div class="dropdown-content">
+                <a href="#">照片</a>
+                <a href="#">影片</a>
+                <a href="#">粉專</a>
+              </div>          
+        <li><a href="orders.html">訂做你的米克斯</a></li>
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">誠徵永久貓奴</a>
+              <div class="dropdown-content">
+                <a href="#">新手養貓準備</a>
+                <a href="#">日常照料</a>
+                <a href="#">送養專區</a>
+        <li style="float:right"><a href="#about">關於我們</a></li>
+
+
+      </ul>
+
+    <div>
+    
+        
+        <h1 class="display-2"> <div style=" padding:10px">夢幻米克斯貓│你的生活好夥伴</div></h1>
+        <p></p>
+        <img src="images/c0.jpg" alt="" width=60%>
+        <p>米克斯貓咪,或稱作短毛家貓,是經過各地不同品種的貓咪雜交後的結果,也因此牠們擁有多變的花色 體態 與性格。但不變的是,只要跟牠們培養好感情,牠們會是你生活上的好夥伴,給你帶來許多樂趣與驚喜(或是驚嚇 XD)。</p>
+        <p>接下來我們就來好好介紹一下米克斯貓咪們,也希望看完介紹的你能去各地收容所或愛心中途認養一隻米克斯回家好好供奉,為流浪動物盡一點小小的努力。</p>
+    </div>
+
+
+</body>
+</html>
