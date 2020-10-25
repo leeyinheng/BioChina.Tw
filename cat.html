@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+
+<!--this is a HTML code practice from David Chen -->
+
+<html  lang="zh-Hant-TW">
+
+
+
+<head>
+      <!-- SEO -->
+      <title>夢幻米克斯貓│訂做你的米克斯貓咪</title>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+      <meta http-equiv="content-language" content="zh-tw" />
+      <meta name="author" content="David Chen">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes"/>
+      <meta name="description" content="米克斯貓咪,或稱作短毛家貓,是經過各地不同品種雜交後的結果,也因此牠們擁有多變的花色 體態 與性格。但不變的是,只要跟牠們培養好感情,牠們會是你生活上的好夥伴,給你帶來許多樂趣與驚喜(或是驚嚇 XD)。接下來我們就來好好介紹一下米克斯貓咪們,也希望看完介紹的你能去各地收容所或愛心中途認養一隻米克斯回家好好供奉,為流浪動物盡一點小小的努力。">
+      <meta name="keywords" content="米克斯貓,七種,花色,認養,mixed breed cats,TNR,TNVR,貓咪,貓,健康,聰明,街頭動物,流浪動物,保護">
+     
+      <meta property="og:title" content="夢幻米克斯貓│你的生活好夥伴"/>
+      <meta property="og:url" content="TBD"/>
+      <meta property="og:image" content="TBD"/>
+      <meta property="og:description" content="米克斯貓咪,或稱作短毛家貓,是經過各地不同品種雜交後的結果,也因此牠們擁有多變的花色 體態 與性格。但不變的是,只要跟牠們培養好感情,牠們會是你生活上的好夥伴,給你帶來許多樂趣與驚喜(或是驚嚇 XD)。接下來我們就來好好介紹一下米克斯貓咪們,也希望看完介紹的你能去各地收容所或愛心中途認養一隻米克斯回家好好供奉,為流浪動物盡一點小小的努力。"/>
+  
+      <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <!-- BOOTSTRAP 4.0 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <style>
+        body {
+          font-size: 28px;
+          margin-top: 8px;
+          margin-left: 0px;
+          margin-right: 0px;
+          /* margin-right: 8px;
+          margin-left: 8px;
+          margin-bottom: 8px; */
+        }
+        p{
+          text-indent : 1em;
+          margin-block-start: 28px;
+          margin-block-end: 28px;
+          line-height:1.33;
+          
+        }
+        .active {
+          background-color: #8C6239;
+          line-height:37px
+        }
+
+        h2 {
+          text-decoration: underline;
+        }
+
+        ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          /* overflow: hidden; */
+          background-color: rgb(224, 174, 118);
+          position: -webkit-sticky; /* Safari */
+          position: sticky;
+          top: 0;  
+          min-height: 65px;
+        }
+        
+        li {
+          float: left;
+          border-right:1px solid #fff;
+          line-height:37px
+        }
+        li:last-child {
+          border-right: none;
+        }
+        
+        li a, .dropbtn {
+          display: inline-block;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+
+        li a:hover, .dropdown:hover .dropbtn {
+          background-color: rgb(134, 66, 10);
+          text-decoration: none;
+          color: white;
+        }
+
+        li.dropdown {
+          display: inline-block;
+        }
+
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: rgb(224, 174, 118);
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+        }
+
+        .dropdown-content a {
+          color: white;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+          text-align: left;
+        }
+
+        .dropdown-content a:hover {background-color: #8C6239;}
+
+        .dropdown:hover .dropdown-content {
+          display: block;
+        }
+
+        @media screen and (max-width: 600px) {
+        ul li.right, 
+        ul li {float: none;}
+        }
+
+        .progress-container {
+        width: 100%;
+        height: 8px;
+        background: #ccc;
+        
+        }
+
+        .progress-bar {
+        height: 8px;
+        background: #8c6239;
+        width: 0%;
+        }
+
+        .header {
+        position: fixed;
+        top: 0;
+        z-index: 1;
+        width: 100%;
+        background-color: #f1f1f1;
+
+        }
+
+    </style>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+
+</head>
+<body>
+
+<ul>
+  <li><a class="active" href="index.html">首頁</a></li>
+  <li><a href="colors.html">常見花色介紹</a></li>
+  <li class="dropdown">
+      <a href="community.html" class="dropbtn">社區街貓故事</a>
+        <div class="dropdown-content">
+          <a href="community.html">Mika</a>
+          <a href="threeMusketeers.html#title-one">小白</a>
+          <a href="threeMusketeers.html#title-two">小斑(派咪)</a>
+          <a href="threeMusketeers.html#title-three">小橘</a>
+          <a href="bunhead.html">大頭白白</a>
+          <a href="tinytang.html">小小橘(勇)</a>
+          <a href="mia.html">Mia(淑女)</a>
+          <a href="sayuri.html">小百合</a>
+        </div>
+  <li class="dropdown">
+      <a href="photos.html" class="dropbtn">貓奴生活分享</a>
+        <div class="dropdown-content">
+          <a href="photos.html">照片</a>
+          <a href="videos.html">影片</a>
+          <a href="fanpages.html">粉專</a>
+        </div>          
+  <li><a href="orders.html">訂做你的米克斯</a></li>
+  <li class="dropdown">
+      <a href="adoptions.html" class="dropbtn">誠徵永久貓奴</a>
+        <div class="dropdown-content">
+          <a href="adoptions.html">送養專區</a>
+          <a href="newbies.html">新手養貓準備</a>
+          <a href="nurture.html">日常照料</a>
+  <li style="float:right"><a href="aboutus.html">關於我們</a></li>
+</ul>
+
+<div class="header">
+  <div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+  </div>  
+</div>
+
+<h1 class="display-4" style="font-weight:700;margin-block-start: 37.52px;margin-block-end: 37.52px;">訂做你的夢幻米克斯貓咪</h1>
+
+<p>雖然路上或收容所的米克斯貓咪已經種類繁多，偶爾也會有不肖繁殖場將利用殆盡的品種貓扔到大街上自生自滅，或是真的品種家貓自己貪玩流落街頭，進而造成台灣的米克斯街貓更加地多樣化。有些米克斯還會混到長毛或是短腿基因，不過這些都算是少數特例。
+</p>
+<p>在台灣，有些特定花色或特徵的街貓較受歡迎，有些則是乏人問津。雖然領養街貓非常看緣份與運氣，但我常常在想，如果這些米克斯貓咪的特徵也能客製化，讓所有想養米克斯的人都能養到心目中的夢幻貓咪，不也是好事一件。
+</p>
+<p>可惜現實生活裡要用基因工程客製一隻理想的生物是要花上大筆金錢的，或者若是你提出想領養的貓咪條件希望收容所或是中途之家幫忙媒合，應該也會被網友們砲轟到體無完膚 XD。總而言之只要是免費領養的，我們一般人很難對這些送養單位提出任何條件，這也是十分合情合理的就是了。
+</p>
+<p>所以請容我們在這裡小小幻想一下，假如你可以訂購一隻客製化的米克斯貓咪，你希望牠會是什麼樣子? 我們也可以順便統計一下台灣人對米克斯貓咪各種特徵的喜好程度。
+</p>
+
+<div class="container">
+  <h2>訂購人基本資料</h2>
+  <form id="catorder">
+
+    <div class="form-group col-md-4">
+      <label for="fullname">訂購人姓名:</label>
+      <input type="text" class="form-control" id="fullname" placeholder="輸入您的姓名" name="fullname">
+    </div>
+
+    <div class="form-group col-md-4">
+      <label for="cellnum">訂購人手機:</label>
+      <input type="tel" class="form-control" id="cellnum" placeholder="輸入您的手機" name="cellnum">
+      <small class="hint">
+        共10碼 例:0933123123
+      </small><br>
+    </div>
+
+    <div class="form-group col-md-4">
+        <label for="email">訂購人Email:</label>
+        <input type="email" class="form-control" id="email" placeholder="輸入您的email" name="email">
+        <small class="hint">
+          例:aaa@bbb.ccc
+        </small><br>
+    </div>
+
+    <div class="form-group col-md-6">
+      <label for="address">訂購人地址:</label>
+      <input type="text" class="form-control" id="address" placeholder="輸入您的地址" name="address">
+    </div><br>
+
+  <h2>你的夢幻米克斯屬性</h2>
+
+  <div class="form-group">
+
+    <div>
+      <label for="size" class="form-inline">選擇貓咪體型 :&ensp;
+        <select class="form-control" id="size" name="size">
+          <option>中大型</option>
+          <option>中小型</option>
+        </select>
+      </label>
+    </div>
+
+    <div>
+        <label for="colors" class="form-inline">選擇貓咪花色 :&ensp;
+          <select class="form-control" id="colors" name="colors">
+            <option>純白</option>
+            <option>純黑</option>
+            <option>黑白貓</option>
+            <option>橘貓</option>
+            <option>三花</option>
+            <option>淡色三花</option>
+            <option>玳瑁</option>
+            <option>虎斑</option>
+            <option>白底虎斑</option>
+            <option>橘白</option>
+            <option>三花虎斑</option>
+            <option>淡色虎斑</option>
+          </select>
+        </label>
+    </div>
+
+    <div>
+      <label for="fshapes" class="form-inline">選擇貓咪臉型 :&ensp;
+        <select class="form-control" id="fshapes" name="fshapes">
+          <option>一般</option>
+          <option>圓臉</option>
+          <option>扁臉</option>
+          <option>長臉</option>
+        </select>
+      </label>
+    </div>
+
+    <div>
+      <label for="legs" class="form-inline">選擇貓咪腿長 :&ensp;
+        <select class="form-control" id="legs" name="legs">
+          <option>長腿</option>
+          <option>短腿</option>
+        </select>
+      </label>
+    </div>
+
+  </div>
+
+  <br>
+  <h3>確認資料都正確後請點選"送出"</h3>
+  <button type="submit" class="btn btn-primary">送出</button>
+  </form>
+</div>
+
+<div id="display"></div>
+
+
+
+<script>
+  // When the user scrolls the page, execute myFunction 
+  window.onscroll = function() {myFunction()};
+  
+  function myFunction() {
+    var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    var scrolled = (winScroll / height) * 100;
+    document.getElementById("myBar").style.width = scrolled + "%";
+  }
+</script>
+
+
+<script>
+  $("#catorder").submit(function(e) {
+        
+    e.preventDefault();
+  
+      var form = $(this);
+  
+      $.ajax({
+             type: "POST",
+             url: "https://leecloud.azurewebsites.net/api/catloverapi/",
+             // url: "https://localhost:44347/api/catloverapi/", 
+             data: form.serialize(),
+             success: function(data)
+             {
+              if (data === undefined) {
+                alert("沒有適合的貓!");
+              } else {
+                $('#display').empty();
+              var html = "<ul> <li>" + data.Id + "</li>";
+               html += "<li>" + data.Color + "</li>";
+               html += "<li>" + "<img src= " + data.Url + "> </img>" + "</li>";
+               html += "</ul>";
+              $('#display').append(html);
+              }
+              
+             }
+      });
+      
+  });
+  </script>
