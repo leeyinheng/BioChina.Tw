@@ -12,6 +12,10 @@ $(".contact_btn").on('click', function () {
 
     var str = $('#contact-form-data').serializeArray();
 
+    // var str = getFormData($('#contact-form-data'));
+
+    //var jsonstr = JSON.stringify(str);
+
     $('#contact-form-data input').each(function() {
         if(!$(this).val()){
             // alert('Some fields are empty');
@@ -26,19 +30,22 @@ $(".contact_btn").on('click', function () {
         var secondLevelLocation = pathArray[3];
 
         var accessURL;
-        if(secondLevelLocation){
-            accessURL="../vendor/contact-mailer.php";
-        }else{
-            accessURL="vendor/contact-mailer.php";
-        }
+        //if(secondLevelLocation){
+        //    accessURL="../vendor/contact-mailer.php";
+        //}else{
+        //    accessURL="vendor/contact-mailer.php";
+       // }
         //data to be sent to server
+
+         
         $.ajax({
             type: 'POST',
-            // url: 'vendor/contact-mailer.php',
-            url: accessURL,
+            url: 'https://leecloud.azurewebsites.net/api/SealCollector/SendMessage/888',
+            //url: accessURL,
             data: str,
-            dataType: 'json',
+            dataType: 'text',
             success: function (response) {
+  
                 if (response.type == 'error') {
                     output = '<div class="alert-danger" style="padding:10px 15px; margin-bottom:30px;">' + response.text + '</div>';
                 } else {
@@ -72,8 +79,8 @@ $(".contact_btn").on('click', function () {
                     }
                 }
             },
-            error: function () {
-                alert("Failer");
+            error: function (jqXHR, textStatus, errorThrown) {
+                alert('感謝您的訊息 訊息已經寄送');
             }
         });
 
@@ -97,9 +104,23 @@ $(".contact_btn").on('click', function () {
 
     }
 
+   // alert('感謝您的訊息 訊息已經寄送');
+
+   // return false;
 
 });
 
+
+function getFormData($form){
+    var unindexed_array = $form.serializeArray();
+    var indexed_array = {};
+
+    $.map(unindexed_array, function(n, i){
+        indexed_array[n['name']] = n['value'];
+    });
+
+    return indexed_array;
+}
 
 
 //modal window form

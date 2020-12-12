@@ -531,37 +531,37 @@
                <div class="col-lg-6 col-md-12 col-sm-12 form-section wow fadeInRight" data-wow-delay="400ms">
                   <h2 class="heading">留言</h2>
                   <p class="text">若有任何問題或需求, 請留下您的訊息, 系統會自動轉發到協會系統, 專人會與您聯絡 </p>
-                  <form class="contact-form" id="contact-form-data">
+                  <form class="contact-form" id="contact-form-data" >
                      <div class="row">
                         <div class="col-12" id="result"></div>
                         <div class="col-lg-6 col-md-12 col-sm-12">
                            <div class="form-group">
-                              <input class="form-control" type="text" placeholder="Name" required=""  name="userName">
+                              <input class="form-control" type="text" placeholder="名稱" required=""  name="userName">
                            </div>
                         </div>
                         <div class="col-lg-6 col-md-12 col-sm-12">
                            <div class="form-group">
-                              <input class="form-control" type="email" placeholder="Email" required=""  name="userEmail">
+                              <input class="form-control" type="email" placeholder="郵件" required=""  name="userEmail">
                            </div>
                         </div>
                         <div class="col-lg-6 col-md-12 col-sm-12">
                            <div class="form-group">
-                              <input class="form-control" type="email" placeholder="Contact" required=""  name="userPhone">
+                              <input class="form-control" type="text" placeholder="電話" required=""  name="userPhone">
                            </div>
                         </div>
                         <div class="col-lg-6 col-md-12 col-sm-12">
                            <div class="form-group">
-                              <input class="form-control" type="text" placeholder="Subject" required=""  name="userSubject">
+                              <input class="form-control" type="text" placeholder="主旨" required=""  name="userSubject">
                            </div>
                         </div>
                         <div class="col-lg-12 col-md-12 col-sm-12">
                            <div class="form-group">
-                              <textarea class="form-control" placeholder="Message"  name="userMessage" rows="6" cols="50"></textarea>
+                              <textarea class="form-control" placeholder="訊息"  name="userMessage" rows="6" cols="50"></textarea>
                            </div>
                         </div>
                         <div class="contact-button text-center">
                            <a href="JavaScript:void(0);" class="btn button btn-rounded btn-black btn-hvr-pink contact_btn">
-                              SUBMIT
+                              送出
                               <div class="btn-hvr-setting">
                                  <ul class="btn-hvr-setting-inner">
                                     <li class="btn-hvr-effect"></li>
@@ -638,5 +638,11 @@
       <!-- custom script -->
       <script src="vendor/js/contact_us.js"></script>
       <script src="startup-portfolio/js/script.js"></script>
+
+      <script>
+         function formSubmit() {
+            document.getElementById('contact-form-data').submit();
+         }
+      </script>
    </body>
 </html>
