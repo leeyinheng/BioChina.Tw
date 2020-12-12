@@ -80,7 +80,7 @@ $(".contact_btn").on('click', function () {
                 }
             },
             error: function (jqXHR, textStatus, errorThrown) {
-                alert('感謝您的訊息 訊息已經寄送');
+                alert('感謝您的訊息 訊息已經寄送');  // 200 ok but go error on ajax
             }
         });
 
