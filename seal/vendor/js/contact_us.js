@@ -5,6 +5,8 @@ $(".contact_btn").on('click', function () {
     // $(".contact_btn b").text('Sending');
     $(".contact_btn i").removeClass('d-none');
 
+    $(".btn_message").text("處理中..");
+
     //simple validation at client's end
     var post_data, output;
     var proceed = "true";
@@ -81,6 +83,7 @@ $(".contact_btn").on('click', function () {
             },
             error: function (jqXHR, textStatus, errorThrown) {
                 alert('感謝您的訊息 訊息已經寄送');  // 200 ok but go error on ajax
+                $(".btn_message").text("");
             }
         });
 
