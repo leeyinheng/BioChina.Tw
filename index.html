@@ -36,17 +36,123 @@
 
 	<link rel="stylesheet" href="assets/css/main.css">
 	</link>
-
+ 
 	<link href="assets/css/jquery.excoloSlider.css" rel="stylesheet">
 	</link>
-
-	<link href="assets/css/effect.css" rel="stylesheet">
-	</link>
-
  
 
-	<!-- [if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif] -->
+ <!-- from style -->
+ <link href='http://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
 
+ <link rel="stylesheet" href="assets/css/formstyle.css">
+</link>
+
+ 
+ 
+ <style type="text/css">
+	.form-style-5{
+		max-width: 500px;
+		padding: 10px 20px;
+		background: #f4f7f8;
+		margin: 10px auto;
+		padding: 20px;
+		background: #f4f7f8;
+		border-radius: 8px;
+		font-family: Georgia, "Times New Roman", Times, serif;
+	}
+	.form-style-5 fieldset{
+		border: none;
+	}
+	.form-style-5 legend {
+		font-size: 1.4em;
+		margin-bottom: 10px;
+	}
+	.form-style-5 label {
+		display: block;
+		margin-bottom: 8px;
+	}
+	.form-style-5 input[type="text"],
+	.form-style-5 input[type="date"],
+	.form-style-5 input[type="datetime"],
+	.form-style-5 input[type="email"],
+	.form-style-5 input[type="number"],
+	.form-style-5 input[type="search"],
+	.form-style-5 input[type="time"],
+	.form-style-5 input[type="url"],
+	.form-style-5 textarea,
+	.form-style-5 select {
+		font-family: Georgia, "Times New Roman", Times, serif;
+		background: rgba(255,255,255,.1);
+		border: none;
+		border-radius: 4px;
+		font-size: 15px;
+		margin: 0;
+		outline: 0;
+		padding: 10px;
+		width: 100%;
+		box-sizing: border-box; 
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box; 
+		background-color: #e8eeef;
+		color:#8a97a0;
+		-webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+		box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+		margin-bottom: 30px;
+	}
+	.form-style-5 input[type="text"]:focus,
+	.form-style-5 input[type="date"]:focus,
+	.form-style-5 input[type="datetime"]:focus,
+	.form-style-5 input[type="email"]:focus,
+	.form-style-5 input[type="number"]:focus,
+	.form-style-5 input[type="search"]:focus,
+	.form-style-5 input[type="time"]:focus,
+	.form-style-5 input[type="url"]:focus,
+	.form-style-5 textarea:focus,
+	.form-style-5 select:focus{
+		background: #d2d9dd;
+	}
+	.form-style-5 select{
+		-webkit-appearance: menulist-button;
+		height:35px;
+	}
+	.form-style-5 .number {
+		background: #1abc9c;
+		color: #fff;
+		height: 30px;
+		width: 30px;
+		display: inline-block;
+		font-size: 0.8em;
+		margin-right: 4px;
+		line-height: 30px;
+		text-align: center;
+		text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+		border-radius: 15px 15px 15px 0px;
+	}
+	
+	.form-style-5 input[type="submit"],
+	.form-style-5 input[type="button"]
+	{
+		position: relative;
+		display: block;
+		padding: 19px 39px 18px 39px;
+		color: #FFF;
+		margin: 0 auto;
+		background: #1abc9c;
+		font-size: 18px;
+		text-align: center;
+		font-style: normal;
+		width: 100%;
+		border: 1px solid #16a085;
+		border-width: 1px 1px 3px;
+		margin-bottom: 10px;
+	}
+	.form-style-5 input[type="submit"]:hover,
+	.form-style-5 input[type="button"]:hover
+	{
+		background: #109177;
+	}
+	</style>
+  
 
 	<!-- Facebook Pixel Code -->
 	<script>
@@ -662,9 +768,80 @@
 							</section>
 						</div>
 					</div>
+
+				 
 				</div>
 			</div>
 		</div>
+
+		<p></p>
+
+		<!--Contact section start-->
+	 
+				 
+		<div id="content">
+
+			<div class="form-style-10" style="height: 2200px;">
+				<h1>有興趣?<span>請留下聯絡訊息 保證兩個工作日內與您email 或 電話連絡!</span></h1>
+				<form action="https://leecloud.azurewebsites.net/api/BioChinaWebApi/" method="post" id="formrequest" >
+					<div class="section"><span>1</span>簡單稱呼和電話以及Email</div>
+					<div class="inner-wrap">
+						<label>稱呼 <input type="text" name="name" id="name" /></label>
+						<label>電話 <input type="text" name="phone" id="phone" /></label>
+						<label>Email 電子郵件 <input type="email" name="email" id="email" /></label>
+				
+					<div class="section"><span>2</span>有興趣或想購買產品</div>
+					<div class="inner-wrap">
+						<label for="size">點按選擇產品 :&ensp;
+							<select class="form-control" name="product" id="product">
+							  <option value="中華HFP甲殼素">中華HFP甲殼素</option>
+							  <option value="HFP幾丁聚醣原料">HFP幾丁聚醣原料</option>
+							  <option value="甲殼素牙膏">甲殼素牙膏</option>
+							  <option value="益骨">益骨</option>
+							  <option value="真珠膠囊">真珠膠囊</option>
+							  <option value="未來木砧板">未來木砧板</option>
+							  <option value="甲殼素抹布">甲殼素抹布</option>
+							  <option value="其他">其他</option>
+							</select>
+						  </label>
+					</div>
+				
+					<div class="section"><span>3</span>詢問內容或是購買訊息</div>
+						<div class="inner-wrap">
+						<label>訊息內容 <textarea name="message" id="message"></textarea></label>
+					</div>
+
+					<div class="section"><span>4</span>銀行匯款方式: 戶名: 中華生物科技股份有限公司   銀行別 : 台北富邦銀行臨沂分行(012)   帳號 : 580-102-014959 </div>
+					 <p></p>
+					<div class="section"><span>5</span>街口支付付款 QR Code: </div>
+					<div class="inner-wrap">
+						<img src="images/QRCode.png" style="width: 100%;"/>
+					</div>
+					<div class="section"><span>6</span>支付寶付款 QR Code: </div>
+					<div class="inner-wrap">
+						<img src="images/AliPayQRCode.jpeg" style="width: 100%;"/>
+					</div>
+					<div class="section"><span>7</span>PayPal 帳號: leeyinheng@yahoo.com </div>
+					<p></p>
+					<div class="section"><span>8</span>Venmo 帳號: @Henry-Lee-159 </div>
+
+				</div>
+
+
+					<div class="button-section">
+					 <input type="submit" name="Sign Up" />
+					 <span class="privacy-policy" style="color: crimson;">
+						<input type="checkbox" name="discount" id="discount">是樂天老客戶?
+						</span>
+					</div>
+				</form>
+            </div>
+			<div id="result"></div>
+		</div>		 
+	
+	
+		
+		<!--Contact section end-->
 
 		<!-- Footer -->
 
@@ -787,12 +964,57 @@
 			document.getElementById('popModal').style.display = "none";
 		}
 
-		$(document).ready(function () {
+		/* attach a submit handler to the form */
+		$("#formrequest").submit(function(event) {
 
-		 // document.getElementById('popModal').style.display = "block";
+	 
+		if ($('#name').val() === '') {
+			alert("稱呼不能空白");
+			return false;
+		}
 
+		if ($('#email').val() === '' && $('#phone').val() === '') {
+			alert("必須有電話或是Email");
+			return false;
+		}
+		
+		
+		/* stop form from submitting normally */
+		event.preventDefault();
+
+		/* get the action attribute from the <form action=""> element */
+		var $form = $(this),
+		url = $form.attr('action');
+
+		/* Send the data using post with element id name and name2*/
+		var posting = $.post(url, {
+		name: $('#name').val(),
+		phone: $('#phone').val(),
+		email: $('#email').val(),
+		product: $('#product').val(),
+		message: $('#message').val(),
+		discount: $('#discount').is(":checked")
 		});
+
+		alert('感謝您的訊息 我們會在兩個工作天內回覆您');
+
+		/* Alerts the results */
+		posting.done(function(data) {
+		$('#result').text('success');
+		});
+		posting.fail(function() {
+		$('#result').text('failed');
+		});
+		});
+
+	 
 	</script>
+
+	<!-- JavaScript -->
+ 
+ 
+ 
+ 
 </body>
 
 </html>
