@@ -20,8 +20,8 @@
   
   .response{
       position: relative;
-      background: rgb(3, 77, 3);
-      color:rgb(3, 77, 3);
+      background: #79a207;
+      color:#79a207;
       padding: 10px 20px;
       -webkit-transform: translate3d(0,-40px, 0) rotate(-.5deg);
       z-index: 1;
