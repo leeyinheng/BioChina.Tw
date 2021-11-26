@@ -43,6 +43,7 @@ $(".contact_btn").on('click', function () {
         $.ajax({
             type: 'POST',
             url: 'https://leecloud.azurewebsites.net/api/SealCollector/SendMessage/888',
+            // url: 'https://localhost:44347/api/SealCollector/SendMessage/888',
             //url: accessURL,
             data: str,
             dataType: 'text',
@@ -51,7 +52,7 @@ $(".contact_btn").on('click', function () {
                 if (response.type == 'error') {
                     output = '<div class="alert-danger" style="padding:10px 15px; margin-bottom:30px;">' + response.text + '</div>';
                 } else {
-                    output = '<div class="alert-success" style="padding:10px 15px; margin-bottom:30px;">' + response.text + '</div>';
+                    output = '<div class="alert-success" style="padding:10px 15px; margin-bottom:30px;">' + '訊息送出' + '</div>';
                     //reset values in all input fields
                     $('.contact-form input').val('');
                     $('.contact-form textarea').val('');
@@ -75,7 +76,7 @@ $(".contact_btn").on('click', function () {
                             type: 'success',
                             icon: 'success',
                             title: 'Success!',
-                            html: '<div class="text-success">'+ response.text +'</div>',
+                            html: '<div class="text-success">'+ '訊息送出' +'</div>',
                         })
                         $(".contact_btn i").addClass('d-none');
                     }
